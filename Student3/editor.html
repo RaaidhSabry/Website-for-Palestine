@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Specifies the character encoding for the HTML document -->
+        <meta charset="UTF-8">
+        <!-- Sets the viewport to ensure the page is responsive on all devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Links to external CSS files for styling the page -->
+        <link rel="stylesheet" href="/Student3/editor-style.css">
+        
+        <!-- Links to external JavaScript files for adding functionality to the page -->
+        <script src="/Student3/scripts/script.js"></script>
+        <script src="/Student3/scripts/nav.js"></script>
+        <!-- Title of the HTML document -->
+        <title>Editor</title>
+    </head>
+    <body>
+        <!-- Navigation bar container -->
+        <nav id="navContainer">
+            <!-- Website logo -->
+            <a href="/Student2/Homepage.html"><img id="logo" src="/Student3/images/logo.png" alt="Website logo"></a>
+        </nav>
+        <!-- Spacer for layout -->
+        <br>
+        <br>
+        <br>
+        <br>
+        <!-- Page editor section -->
+        <div class="page-editor">
+            <h1>Page Editor</h1>
+        </div>
+        <!-- Spacer for layout -->
+        <br>
+        <br>
+        <!-- Personal details section -->
+        <div class="my-details">
+            <img src="/Student3/images/inam.jpg" alt="me">
+            <br>
+            <h2>Inam Irshad</h2>
+            <p>Student 3</p>
+            <p>w2084816</p>
+            <p>20230510</p>
+            <hr>
+            <br>
+            <!-- Description section -->
+            <div class="description">                
+                <p class="description">Hello! The Following pages were edited by me! Click the buttons to visit them! ;)</p>
+            </div>
+        </div>
+        <!-- Spacer for layout -->
+        <br>
+        <br>
+        <br>
+        <br>
+        <!-- Pages container -->
+        <div class="page-containor">
+            <!-- Team page section -->
+            <div class="page">
+                <h3>Team page</h3>
+                <hr>
+                <br>
+                <br>
+                <p>The page has an introduction on the 4 team members with interactivity for the containers.</p>
+                <br>
+                <a class="button" href="/Student3/team.html">Click me!</a>
+            </div>
+            <!-- Login page section -->
+            <div class="page">
+                <h3>Login Page</h3>
+                <hr>
+                <br>
+                <br>
+                <p>Page for users to enter their credentials to login to the website. Comes under profile page</p>
+                <br>
+                <a class="button" href="/Student3/profile.html" onclick="setFunctionAndRedirect('login')">Click me!</a>            
+            </div>
+            <!-- Sign-up page section -->
+            <div class="page">
+                <h3>Sign-up page</h3>
+                <hr>
+                <br>
+                <p>Join our community! Register for exclusive access to personalized features. Fill out the form to create your account and unlock a world of possibilities.</p>
+                <a class="button" href="/Student3/profile.html" onclick="setFunctionAndRedirect('register')">Click me!</a>            
+            </div>
+            <!-- Donations page section -->
+            <div class="page">
+                <h3>Donations</h3>
+                <hr>
+                <br>
+                <p>Support our cause with a donation. Every contribution helps us make a difference. Explore how you can support and contribute to our initiatives for positive change.</p>
+                <a class="button" href="/Student3/content.html">Click me!</a>           
+            </div>
+        </div>
+        <!-- Spacer for layout -->
+        <br>
+        <!-- Back to home button -->
+        <a class="button" href="/Student2/Homepage.html">Back to home</a>
+    </body>
+</html>

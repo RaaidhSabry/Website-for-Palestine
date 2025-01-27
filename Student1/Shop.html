@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="/Student1/Shop.css">
+    <link rel="stylesheet" href="/Student1/Nav.css">
+    <link rel="stylesheet" href="/Student1/footer.css">
+</head>
+<body>
+    <!-- Nav Bar -->
+    <nav id="navContainer">
+        <a href="/Student2/Homepage.html"><img id="logo" src="/Student3/images/logo.png" alt="Website logo"></a>
+        <ul>
+            <li><a href="/Student2/Homepage.html ">Home</a></li>
+            <li><a href="/Student1/Shop.html" id="selected">Shop</a></li>
+            <li><a href="/Student4/Gallery.html">Gallery</a></li>
+            <li><a href="/Student4/Sitemap.html">Sitemap</a></li>
+            <li><a href="/Student2/Feedback.html">Feedback</a></li>
+            <li><a href="/Student2/Homepage.html#cont">Content</a></li>
+            <li><a href="/Student3/team.html">Team</a></li>
+            <li><img id="user" src="/Student1/images/user.png" alt=" User"></li>  
+        </ul>
+        <div id="submenu" class="sub-menue">
+        <a href="/Student3/profile.html" class="sub-menue-link" onclick="setFunctionAndRedirect('login')">
+            <img src="/Student3/images/login.png" alt="Login">
+            <p>Login</p>
+            <span>></span>
+        </a>
+        <a href="/Student3/profile.html" class="sub-menue-link" onclick="setFunctionAndRedirect('register')">
+            <img src="/Student3/images/sign-up.png" alt="Sign-up">
+            <p>Sign-up</p>
+            <span>></span>
+        </a>
+        </div>
+    </nav>
+
+     <!-- Description -->
+      <div id="Description">
+        <h2>The proceeds from this purchase include aid money that will be donated to the people of Palestine</h2>
+      </div>
+    <!-- Products Page -->
+
+    <div id="container">
+        <div id="product-section">
+            <div class="gallery">
+                <div class="content">
+                    <!-- T-shirt Product -->
+                    <img src="images/Shop/T-shirt/White-Tshirt.png" alt="White-Tshirt" class="ProductImg" id="productImg1">
+                    <br>
+                    <h3>T-shirt</h3>
+                    <h6>LKR 4500.00</h6>
+                    <!-- Size -->
+                    <label for="T-shirt-size">Choose a Size:</label>
+                    <select name="Size" id="T-shirt-size">
+                        <option value="Small">Small</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Large">Large</option>
+                        <option value="XL">XL</option>
+                    </select>
+                    <!-- colour -->
+                    <div id="selectColor">
+                        <p>Color: </p>
+                        <input type="radio" id="white-Tshirt" name="color1" value="White" checked>
+                        <label for="white-Tshirt">White</label>
+                        <input type="radio" id="black-Tshirt" name="color1" value="Black">
+                        <label for="black-Tshirt">Black</label> 
+                    </div>
+
+                    <button class="btn" onclick="addCart(this)"> Add to Cart <img src="images/Cartpic.png" alt="CartSVG" class="cart"></button>
+                      
+                </div>
+                <div class="content">
+                    <!-- Hoodie Product -->
+                    <img src="images/Shop/Hoodie/White-Hoodie.png" alt="White-Hoodie" class="ProductImg" id="productImg2">
+                    <br>
+                    <h3>Hoodie</h3>
+                    <h6>LKR 6000.00</h6>
+                    <!-- Size -->
+                    <label for="Hoodie-Size">Choose a Size:</label>
+                    <select name="Size" id="Hoodie-Size">
+                        <option value="Small">Small</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Large">Large</option>
+                        <option value="XL">XL</option>
+                    </select>
+                    <!-- colour -->
+                    <div id="selectColor1">
+                        <p>Color: </p>
+                        <input type="radio" id="White-Hoodie" name="color2" value="White" checked>
+                        <label for="White-Hoodie">White</label>
+                        <input type="radio" id="black-Hoodie" name="color2" value="Black">
+                        <label for="black-Hoodie">Black</label>
+                        
+                    </div>
+                    <button class="btn" onclick="addCart(this)"> Add to Cart <img src="images/Cartpic.png" alt="CartSVG" class="cart"></button>
+                </div>
+                
+                <div class="content">
+                    <!-- Bag Product -->
+                    <img src="images/Shop/Bag/White-Bag.jpg" alt="White-Bag" class="ProductImg" id="productImg3">
+                    <br>
+                    
+                    <h3>Tote Bag</h3>
+                    <h6>LKR 3600.00</h6>
+                    <br>
+                    <!-- colour -->
+                    <div id="selectColor2">
+                        <p>Color: </p>
+                        <input type="radio" id="White-Bag" name="color3" value="White" checked>
+                        <label for="White-Bag">White</label>
+                        <input type="radio" id="black-Bag" name="color3" value="Black">
+                        <label for="black-Bag">Black</label>
+                        <br>
+                        
+                    </div>
+                    <button class="btn" onclick="addCart(this)"> Add to Cart <img src="images/Cartpic.png" alt="CartSVG" class="cart"></button>
+                </div>
+                <!-- Caps -->
+                <div class="content">
+                    <img src="images/Shop/Caps/white.png" alt="White-Cap" class="ProductImg">
+                    <br>
+                    <h3>Cap</h3>
+                    <h6>LKR 1200.00</h6>
+                    <button class="btn" onclick="addCart(this)"> Add to Cart <img src="images/Cartpic.png" alt="CartSVG" class="cart"></button>
+                </div>
+                <!-- Bottle -->
+                <div class="content">
+                    <img src="images/Shop/Bottle/red.jpg" alt="Red-Bottle" class="ProductImg">
+                    <br>
+                    <h3>Bottle</h3>
+                    <h6>LKR 2200.00</h6>
+                    <button class="btn" onclick="addCart(this)"> Add to Cart <img src="images/Cartpic.png" alt="CartSVG" class="cart"></button>
+                </div>
+                <!-- Mug -->
+                <div class="content">
+                    <img src="images/Shop/Mug/White.png" alt="White-cup" class="ProductImg">
+                    <br>
+                    <h3>Cup</h3>
+                    <h6>LKR 900.00</h6>
+                    <button class="btn" onclick="addCart(this)"> Add to Cart <img src="images/Cartpic.png" alt="CartSVG" class="cart"></button>
+                </div>
+            </div>
+        </div>
+        <!-- The cart  -->
+        <div class="labelOrder">
+            <h4> Cart</h4>
+            <div id="orderDescription">
+                <div class="TotalOrder"></div>
+            </div>
+            <h4 id="CostStyle"> Total Cost : </h4>
+            <div id="TotalCost"></div>
+            <div id="orderBtn">
+                <input type="button" name="orderplace" id="orderplace" value="Place Your Order " onclick="showPopup()">
+                <input type="reset" name="reset" id="reset" value="Clear your order " onclick="resetOrder()"> 
+            </div>
+        
+        </div>
+           
+        
+    </div>
+    <!-- The checkout page -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <form class="popupForm" onsubmit="return validation()">
+                <h4>Shipping Address</h4>
+                <input type="text" name="name" id="name" placeholder="Name"><br>
+                <input type="text" name="address" id="address" placeholder="Address"><br>
+                <input type="text" name="city" id="city" placeholder="City"><br>
+                <input type="text" name="postal" id="postal" placeholder="Postal Code"><br>
+                <input type="text" name="phone" id="phone" placeholder="Phone Number"><br>
+                <input type="text" name="email" id="email" placeholder="Email Address"><br>
+                <h4>Card Information</h4>
+                <div id="CardInfo">
+                    <input type="number" name="card" id="card" placeholder="Card Number"><br>
+                    <input type="text" name="cardname" id="cardname" placeholder="Card Holder Name"><br>
+                    <input type="date" name="cardexp" id="cardexp"><br>
+                    <input type="number" name="cvv" id="cvv" placeholder="CVV Number"><br>
+                </div>
+                <input type="submit" name="submit" id="submit" value="Order">
+            </form>
+            <!-- To showcase the total cost -->
+            <div id="orderSummary"></div>
+            
+        </div>
+    </div>
+    
+
+    <footer>
+        <br>
+        <p>Name: <b>Bilal Ayoob</b></p>
+        <p id="page-edit">Page Editor</p>
+        <p>Role: <a href="/Student1/Pageeditor.html" target="_blank"> Student 1</a></p>
+    </footer>   
+    <script src="/Student1/Nav.js"></script>
+    <script src="/Student1/Shop.js"></script>
+</body>
+</html>

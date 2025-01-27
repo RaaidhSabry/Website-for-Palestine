@@ -1,0 +1,125 @@
+body {
+    background-color: rgb(58, 55, 55);
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 100vh; /* Ensure full viewport height */
+    margin: 0; /* Remove default margin */
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+    padding: 10px; 
+    margin-bottom: 20px; /* Space below the header */
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+}
+
+#imgstyle {
+    display: flex;
+    align-items: center;
+    margin-left: 50px; /* Adjust margin for space from the vertical line */
+    font-size: 40px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#imgstyle img {
+    height: 300px;
+    width: 300px; 
+    border-radius: 50%;
+    border: 5px solid red;
+    margin-right: 20px; /* Space between image and vertical line */
+}
+
+#Vertical {
+    width: 2px; /* Adjust width of the vertical line */
+    height: 100%; /* Full height of the viewport */
+    background-color: white;
+    position: absolute;
+    left: 45%;
+    top: 0;
+    transform: translateX(-50%);
+}
+#Vertical2 {
+    width: 4px; /* Adjust width of the vertical line */
+    height: 80%; /* Full height of the viewport */
+    background-color: white;
+    position: absolute;
+    left: 50%; /* Center horizontally */
+    top: 50%; /* Center vertically */
+    transform: translateX(-50%) translateY(-50%); /* Center adjustment */
+}
+
+#additional-content {
+    color: white;
+    text-align: left; /* Align text to the left */
+    margin-left: 20px; /* Adjust margin for space from the vertical line */
+}
+
+#Task {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 50px;
+    left: 56%;
+}
+
+.task-box {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.task-box h3 {
+    color: white;
+    text-decoration: underline;
+}
+
+.task-box p {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.task-box .button-link {
+    font-size: 20px;
+    display: inline-block;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.task-box .button-link:hover {
+    background-color: darkred;
+}
+
+.task-box .button-link:visited {
+    color: blue; /* Changes color of visited links */
+}
+
+.task-box .button-link:active {
+    background-color: green; /* Changes background color when button is active (clicked) */
+}
+#logo{
+    margin-bottom: 160%;
+    margin-left: 80px;
+    height: 150px;
+    width: 350px;
+}

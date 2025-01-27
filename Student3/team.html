@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Specifies the character encoding for the HTML document -->
+        <meta charset="UTF-8">
+        <!-- Ensures the page is responsive on all devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Links to the external CSS file for styling the team page -->
+        <link rel="stylesheet" href="/Student3/team-style.css">
+
+        <!-- Links to the external CSS file for styling the footer -->
+        <link rel="stylesheet" href="/Student3/footer.css">
+
+        <!-- Links to the external CSS file for styling the navigation bar -->
+        <link rel="stylesheet" href="/Student3/nav.css">
+
+        <!-- Links to the external JavaScript file for navigation functionalities -->
+        <script src="/Student3/scripts/nav.js"></script>
+
+        <!-- Links to the external JavaScript file for team page functionalities -->
+        <script src="/Student3/scripts/team.js"></script>
+
+        <!-- Links to the external JavaScript file for general scripts -->
+        <script src="/Student3/scripts/script.js"></script>
+        
+        <!-- Sets the title of the web page -->
+        <title>Team page</title>
+    </head>
+    <body>
+        <!-- Navigation bar section -->
+        <nav id="navContainer">
+            <!-- Website logo image -->
+            <a href="/Student2/Homepage.html"><img id="logo" src="/Student3/images/logo.png" alt="Website logo"></a>
+            <!-- Navigation menu items -->
+            <ul>
+                <li><a href="/Student2/Homepage.html">Home</a></li>
+                <li><a href="/Student1/shop.html">Shop</a></li>
+                <li><a href="/Student4/Gallery.html">Gallery</a></li>
+                <li><a href="/Student4/Sitemap.html">Sitemap</a></li>
+                <li><a href="/Student2/feedback.html">Feedback</a></li>
+                <li><a href="/Student2/Homepage.html#cont">Content</a></li>
+                <li><a href="/Student3/team.html" id="selected">Team</a></li>
+                <li><img id="user" src="/Student3/images/user.png" alt="User image"></li>
+            </ul>
+            <!-- Submenu for user actions like login and sign-up -->
+            <div id="submenu" class="sub-menue">
+                <a href="/Student3/profile.html" class="sub-menue-link" onclick="setFunctionAndRedirect('login')">
+                    <img src="/Student3/images/login.png" alt="Login">
+                    <p>Login</p>
+                    <span>></span>
+                </a>
+                <a href="/Student3/profile.html" class="sub-menue-link" onclick="setFunctionAndRedirect('register')">
+                    <img src="/Student3/images/sign-up.png" alt="Sign-up">
+                    <p>Sign-up</p>
+                    <span>></span>
+                </a>
+            </div>
+        </nav>
+        
+        <!-- Adds spacing between the navigation bar and the content -->
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+        <!-- Main heading of the team page -->
+        <h1 id="heading">Meet the brains</h1>
+        
+        <!-- Subheading paragraphs describing the team's mission -->
+        <br>
+        <p class="subheading">At Project Rebuild, our dedicated team is united by a shared commitment </p>
+        <p class="subheading">to raising awareness about the Palestinian struggle and the impact </p>
+        <p class="subheading">of the ongoing conflict. Each member brings unique expertise </p>
+        <p class="subheading">and a deep passion for justice, human rights, and peace. From researchers </p>
+        <p class="subheading">to activists, our team works tirelessly to provide accurate information, </p>
+        <p class="subheading">support affected communities, and advocate for a peaceful resolution. </p>
+        <p class="subheading">Learn more about the passionate individuals driving our mission forward below.</p>
+        
+        <!-- Adds spacing before the team member section -->
+        <br>
+        <br>
+        
+        <!-- Container for team member profiles -->
+        <div class="team-container">
+            <!-- Profile for Team Member 1 -->
+            <div class="team-member">
+                <img src="/Student3/images/me1.jpeg" alt="Team Member 1">
+                <h2>Bilal</h2>
+                <p>Student 1</p>
+                <hr>
+                <br>
+                <div class="description" id="student1">
+                    <p class="description">Designed and Implemented Pages,</p>
+                    <p class="description">1.Splash Screen</p>
+                    <p class="description">2.Shop</p>
+                    <p class="description">3.Content Page</p>
+                    <p class="description">4.Page editor</p>
+                </div>
+            </div>
+            <!-- Profile for Team Member 2 -->
+            <div class="team-member">
+                <img src="/Student3/images/me2.jpeg" alt="Team Member 2">
+                <h2>Aathif</h2>
+                <p>Student 2</p>
+                <hr>
+                <br>
+                <div class="description" id="student2">
+                    <p class="description">Designed and Implemented Pages,</p>
+                    <p class="description">1.Home Page</p>
+                    <p class="description">2.Feedback Page</p>
+                    <p class="description">3.Content Page</p>
+                    <p class="description">4.Page editor</p>
+                </div>
+            </div>
+            <!-- Profile for Team Member 3 -->
+            <div class="team-member">
+                <img src="/Student3/images/me3.jpeg" alt="Team Member 3">
+                <h2>Inam</h2>
+                <p>Student 3</p>
+                <hr>
+                <br>
+                <div class="description" id="student3">
+                    <p class="description">Designed and Implemented Pages,</p>
+                    <p class="description">1.Team Page</p>
+                    <p class="description">2.Profile Page</p>
+                    <p class="description">3.Content Page</p>
+                    <p class="description">4.Page editor</p>
+                </div>
+            </div>
+            <!-- Profile for Team Member 4 -->
+            <div class="team-member">
+                <img src="/Student3/images/me4.jpeg" alt="Team Member 4">
+                <h2>Raaidh</h2>
+                <p>Student 4</p>
+                <hr>
+                <br>
+                <div class="description" id="student4">
+                    <p class="description">Designed and Implemented Pages,</p>
+                    <p class="description">1.Sitemap Page</p>
+                    <p class="description">2.Gallery Page</p>
+                    <p class="description">3.Content Page</p>
+                    <p class="description">4.Page editor</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Adds spacing before the footer -->
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <!-- Footer section -->
+        <footer>
+            <br>
+            <!-- Footer content -->
+            <p>Name: Inam Irshad</p>
+            <p id="page-edit">Page Editor</p>
+            <p>Role: <a href="/Student3/editor.html" target="_blank">Student 3</a></p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,297 @@
+/* General Styles */
+body {
+    background-image: url("images/ShopBack.jpg");
+    background-size: 100%;
+    margin: 0;
+    font-family: sans-serif;
+}
+/* Gallery and Product Card Styles */
+h3 {
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    padding-top: 10px;
+}
+
+#container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+#product-section {
+    width: 100%;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0; /* Adjust margin to account for fixed navbar */
+}
+
+.content {
+    width: 30%;
+    margin: 15px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    padding-top: 10px;
+    box-shadow: 0 14px 28px rgb(56, 55, 55), 0 10px 10px rgb(53, 52, 52);
+    transition: 0.4s;
+    background: white;
+}
+
+.content:hover {
+    box-shadow: 0 14px 28px rgb(175, 166, 166), 0 10px;
+    transform: translate(0px, -8px);
+    cursor:default;
+}
+
+.ProductImg {
+    width: 250px;
+    height: 200px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+
+}
+.ProductImg:hover{
+    transform: scale(1.5);
+    transition: transform 0.3s ease;
+}
+
+
+
+h6 {
+    text-align: center;
+    font-size: 26px;
+    color: red;
+    margin: 0;
+}
+
+.btn {
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+    margin-top: 5px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+.labelOrder {
+    position: relative;
+    margin-top: 20px;
+    margin-right: 20px ;
+    padding-top: 12px;
+    width: 400px;
+    height: 900px;
+    background-color:rgb(175, 166, 166);
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    border: 5px solid black;
+    
+    
+}
+#orderDescription{
+    position: relative;
+    margin-top: 20px;
+    margin-right: 20px ;
+    padding-top: 12px;
+    width: 390px;
+    height: 700px;
+    background-color: white;
+}
+label{
+    margin-right: 0;
+}
+select {
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-weight: bold;
+    display: inline;
+    position: relative;
+    width: auto;
+    height: 20px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.cart {
+    position: relative;
+    margin: -25px 0 -16px 0;
+    width: 50px;
+    height: 50px;
+}
+
+#selectColor1,#selectColor2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Adjust gap between elements as needed */
+}
+
+#selectColor,#selectColor2 p {
+    margin: 0; /* Remove default margin */
+}
+
+#selectColor, #selectColor2 label {
+    margin-left: 10px;
+}
+h4{
+    font-size: 30px;
+
+}
+.TotalOrder{
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    
+}
+#CostStyle{
+    margin-top: 20px;
+    position: absolute;
+}
+#TotalCost{   
+    margin-top: 20px;
+    left: 50%;
+    position: absolute;
+    font-size: 30px;
+}
+input[type=button], input[type=reset] {
+    width: 120px;
+    height: 50px;
+    margin-right: 20px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    }
+#orderBtn{
+    position: relative;
+    top: 70px;
+}
+/* Popup container */
+.popup {
+    justify-content: center;
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    backdrop-filter: blur(10px);
+}
+
+/* Popup content */
+.popup-content {
+    text-align: left;
+    background-color: rgb(227, 219, 219);
+    margin: 10% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%; /* Could be more or less, depending on screen size */
+    height: 70%;
+}
+
+/* Close button */
+.close {
+    float: right;
+    color: red;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bold;
+    height: 40px;
+    width: 40px;
+    border: 4px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.popupForm{
+    display: flex;
+    flex-direction: column;
+    float: left;
+    min-width: 50%; 
+}
+.popupForm input{
+    height: 40px;
+}
+#CardInfo {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+#cardexp,
+#cvv {
+    width: 45%;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+#cardexp {
+    margin-right: 5%; /* Add margin to the first element */
+}
+#orderSummary {
+    position: relative;
+    float: right;
+    margin-top: 20%;
+    margin-right: 20px;
+    padding-top: 12px;
+    width: 350px;
+    height: 200px;
+    background-color: rgb(237, 237, 250);
+    border: 5px solid black;
+    font-size: 50px;
+}
+#border{
+    margin-top: -15px;
+    border-bottom: 4px solid red;
+}
+#Description{
+    position: relative;
+    top: 140px;
+    color: white;
+    margin-left: 40px;
+    margin-right: 40%;
+    background-color: red;
+}
+input[type="submit"]{
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+
+}
+input[type="submit"]:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}

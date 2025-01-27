@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Student2/Student2.css">
+    <link rel="stylesheet" href="/Student2/content.css">
+    <title>History of Palestine</title>
+</head>
+<body>
+    <header>
+        <nav id="navContainer">
+            <a href="/Student2/Homepage.html"> <img id="logo" src="/Student2/images/logo.png" alt="Project Rebuild Logo"></a>
+             
+            <ul>
+                <li><a href="/Student2/Homepage.html">Home</a></li>
+                <li><a href="/Student1/shop.html">Shop</a></li>
+                <li><a href="/Student4/Gallery.html">Gallery</a></li>
+                <li><a href="/Student4/Sitemap.html">Sitemap</a></li>
+                <li><a href="/Student2/Feedback.html">Feedback</a></li>
+                <li><a href="/Student2/Homepage.html#cont" id="selected">Content</a></li>
+                <li><a href="/Student3/team.html">Team</a></li>
+                <li><img id="user" src="/Student2/images/user.png" alt="user logo">  </li>
+             </ul>
+             <div id="submenu" class="sub-menue">
+             <a href="/Student3/profile.html" class="sub-menue-link" onclick="setFunctionAndRedirect('login')">
+                 <img src="/Student2/images/login.png" alt="logic logo">
+                 <p>Login</p>
+                 <span></span>
+             </a>
+             <a href="/Student3/profile.html" class="sub-menue-link" onclick="setFunctionAndRedirect('register')">
+                 <img src="/Student2/images/sign-up.png" alt="signup logo">
+                 <p>Sign-up</p>
+                 <span></span>
+                </a>
+            </div>
+        </nav>
+        <br><br><br><br>
+        <h1>History of Palestine</h1>
+    </header>
+
+    <div class="container">
+        <section id="ancient-history" class="section">
+            <h2>Ancient History</h2>
+            <p>The history of Palestine is a rich and complex narrative that spans thousands of years. Ancient Palestine was a crossroads of civilizations, with a history dating back to prehistoric times. Archaeological findings suggest that human settlement in the region dates back to the Paleolithic period.</p>
+            <img src="/Student2/images/ancient-ruins.jpeg" alt="Ancient ruins in Palestine">
+        </section>
+
+        <section id="middle-ages" class="section">
+            <h2>Middle Ages</h2>
+            <p>During the Middle Ages, Palestine was an important center of the Christian, Islamic, and Jewish faiths. The region saw a series of crusades, battles, and conquests as European powers sought to control this strategic and holy land. The Crusader Kingdom of Jerusalem was established in the 12th century but was later recaptured by Muslim forces under Saladin.</p>
+            <img src="/Student2/images/middle-ages.jpg" alt="Historical site from the Middle Ages in Palestine">
+        </section>
+
+        <section id="ottoman-period" class="section">
+            <h2>Ottoman Period</h2>
+            <p>The Ottoman Empire ruled over Palestine from the early 16th century until the end of World War I. This period was marked by relatively stable governance, with the region serving as an important part of the larger Ottoman structure. However, the decline of the Ottoman Empire in the 19th century led to increasing European interest and intervention in the region.</p>
+         </section>
+
+        <section id="20th-century" class="section">
+            <h2>20th Century</h2>
+            <p>The 20th century was a tumultuous period for Palestine, marked by significant political and social changes. Following the defeat of the Ottoman Empire in World War I, Palestine came under British mandate. This period saw increased Jewish immigration and tensions between Jewish and Arab populations. The mid-20th century witnessed the creation of the state of Israel and subsequent Arab-Israeli conflicts, shaping the modern history of the region.</p>
+        </section>
+
+        <section id="modern-day" class="section">
+            <h2>Modern Day</h2>
+            <p>Today, the history of Palestine continues to evolve. The Israeli-Palestinian conflict remains a central issue, with ongoing efforts to find a peaceful resolution. The region's rich cultural heritage and historical significance make it a focal point for global interest and international diplomacy.</p>
+            <img src="/Student2/images/modern-day.jpg" alt="Modern day Palestine">
+        </section>
+    </div>
+
+    <button class="go-top" onclick="scrollToTop()">Top</button>
+
+    <footer>
+        <p>Name: Mohamed Aathif</p>
+        <p id="page-edit"><a href="/Student2/pageEditor.html" target="_blank" >Page Editor</a></p>
+        <p>Role: Student 2</p>
+    </footer>
+    <script src="/Student2/Student2.js"></script>
+
+    <script>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        function setFunctionAndRedirect(functionName) {
+    localStorage.setItem('functionToCall', functionName);
+}
+    </script>
+</body>
+</html>

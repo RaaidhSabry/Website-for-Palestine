@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: auto;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size:15px;
+}
+#page-edit{
+    font-size:20px;
+    font-weight: bold;
+}
+footer a:hover{
+    cursor: pointer;
+    color: rgb(119, 146, 233);
+}
+footer a{
+    color: white;
+}

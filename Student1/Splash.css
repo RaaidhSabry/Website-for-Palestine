@@ -1,0 +1,79 @@
+body{
+    background-image: url("images/background1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+#spinner{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 30px;
+    width: 30px;
+    border: 7px solid ;
+    border-radius: 50%;
+    border-color: red black white green;
+    animation: rotate 1s linear infinite;
+
+}
+@keyframes rotate{
+    to {transform: rotate(365deg);}
+}
+
+#View {
+    text-align: center;
+    color: white;
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.team_left{
+    flex: 5;
+    text-align: right;
+}
+.team_right {
+    text-align: left;
+    flex: 5;
+}
+
+#Vertical {
+    width: 5px;
+    height: 90px;
+    background-color: white;
+    margin: 0 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#Logo {
+    height: 250px;
+    width: 600px;
+}
+#PeaceDove{
+    height: 200px;
+    width: 200px;
+}
+#LogoAnime{
+    position: relative;
+    animation: fly 4s linear forwards;
+}
+@keyframes fly {
+    0% {
+        left: -400px;
+    }
+    100% {
+        left: 0px; 
+    }
+}

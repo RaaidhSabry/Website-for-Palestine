@@ -1,0 +1,76 @@
+
+body {
+font-family: Arial, sans-serif;
+line-height: 1.6;
+margin: 0;
+padding: 0;
+background: url("images/background.jpg")
+
+}
+
+header, footer {
+background-color: #333;
+color: white;
+text-align: center;
+}
+
+
+footer {
+width: 100%;
+color: white;
+background-color: rgba(0, 0, 0, 0.5);
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+text-align: center;
+padding: 10px;
+position: fixed;
+bottom: 0;
+}
+
+#page-edit{
+font-size: 20px;
+font-weight: bold;
+}
+.container {
+width: 80%;
+margin: auto;
+overflow: hidden;
+padding: 20px;
+background: white;
+box-shadow: 0 0 10px rgba(0,0,0,0.1);
+border-radius: 8px;
+}
+
+h2 {
+color:goldenrod;
+text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+text-align: center;
+}
+p{
+text-align: center;
+}
+img {
+max-width: 40%;
+height: auto;
+display: block;
+margin: auto;
+border-radius: 8px;
+box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.go-top {
+position: fixed;
+bottom: 80px;
+right: 20px;
+background: gold;
+color: white;
+padding: 10px 15px;
+border: none;
+cursor: pointer;
+border-radius: 50%;
+box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+.go-top:hover {
+background: #411b05;
+}
+

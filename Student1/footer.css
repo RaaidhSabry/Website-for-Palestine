@@ -1,0 +1,30 @@
+footer {
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 20px;
+    display: block;
+}
+
+#page-edit {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+footer a:hover {
+    cursor: pointer;
+    color: rgb(119, 146, 233);
+}
+
+footer a {
+    color: white;
+}

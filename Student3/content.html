@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Specifies the character encoding for the HTML document -->
+        <meta charset="UTF-8">
+        <!-- Sets the viewport to ensure the page is responsive on all devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Links to external CSS files for styling the page -->
+        <link rel="stylesheet" href="/Student3/content-style.css">
+        <link rel="stylesheet" href="/Student3/nav.css">
+        <link rel="stylesheet" href="/Student3/footer.css">
+        
+        <!-- Links to external JavaScript files for adding functionality to the page -->
+        <script src="/Student3/scripts/nav.js"></script>
+        <script src="/Student3/scripts/script.js"></script>
+        <!-- Title of the HTML document -->
+        <title>Content</title>
+    </head>
+    <body>
+        <!-- Navigation bar container -->
+        <nav id="navContainer">
+            <!-- Website logo -->
+            <a href="/Student2/Homepage.html"><img id="logo" src="/Student3/images/logo.png" alt="Website logo"></a>
+            <!-- Navigation links -->
+            <ul>
+                <li><a href="/Student2/Homepage.html">Home</a></li>
+                <li><a href="/Student1/shop.html">Shop</a></li>
+                <li><a href="/Student4/Gallery.html">Gallery</a></li>
+                <li><a href="/Student4/Sitemap.html">Sitemap</a></li>
+                <li><a href="/Student2/feedback.html">Feedback</a></li>
+                <li><a href="/Student2/Homepage.html#cont" id="selected">Content</a></li>
+                <li><a href="/Student3/team.html">Team</a></li>
+                <li><img id="user" src="/Student3/images/user.png" alt="User image"></li>
+            </ul>
+            <!-- Submenu for login and sign-up -->
+            <div id="submenu" class="sub-menue">
+                <a href="/Student3/profile.html" class="sub-menue-link" onclick="setFunctionAndRedirect('login')">
+                    <img src="/Student3/images/login.png" alt="Login">
+                    <p>Login</p>
+                    <span>></span>
+                </a>
+                <a href="/Student3/profile.html" class="sub-menue-link" onclick="setFunctionAndRedirect('register')">
+                    <img src="/Student3/images/sign-up.png" alt="Sign-up">
+                    <p>Sign-up</p>
+                    <span>></span>
+                </a>
+            </div>
+        </nav>
+        <!-- Spacer for layout -->
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <!-- Message section -->
+        <div class="message">
+            <h1>Together We Can Make A Difference</h1>
+            <p>Every life matters. Every bit helps. Together, we can do wonders to help people in need.</p>
+            <a class="button" href="https://crisisrelief.un.org/opt-crisis" target="_blank">Donate Now</a>
+            <a id="down" href="#page-edit"><img src="/Student3/images/down.png" alt="go down"></a>
+        </div>
+        <!-- Spacer for layout -->
+        <br>
+        <h1>Featured causes</h1>
+        <br>
+        <!-- Featured causes section -->
+        <div class="causes">
+            <div class="cause" id="cause1">
+                <div class="cause-image">
+                    <img src="/Student3/images/medical.jpeg" alt="Medical relief">
+                </div>
+                <div class="description" id="description1">
+                    <h3>Humanitarian Aid and Medical Relief</h3>
+                    <hr>
+                    <br>
+                    <p>Your contribution can save lives by ensuring that those in urgent need have access to basic necessities and medical care.</p>
+                </div>
+            </div>
+            <div class="cause" id="cause2">
+                <div class="cause-image">
+                    <img src="/Student3/images/edu.jpg" alt="Education">
+                </div>
+                <div class="description" id="description2">
+                    <h3>Education and Youth Empowerment</h3>
+                    <hr>
+                    <br>
+                    <p>By enhancing educational opportunities, you can help break the cycle of poverty and give Palestinian children a brighter future.</p>
+                </div>
+            </div>
+            <div class="cause" id="cause3">
+                <div class="cause-image">
+                    <img src="/Student3/images/rebuild.webp" alt="Rebuilding homes">
+                </div>
+                <div class="description" id="description3">
+                    <h3>Rebuilding Homes and Infrastructure</h3>
+                    <hr>
+                    <br>
+                    <p>Your support will help restore a sense of normalcy and stability to communities, allowing families to rebuild their lives and thrive in a safer environment.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Spacer for layout -->
+        <br>
+        <!-- Donation button -->
+        <div class="donate">
+            <a class="button" href="https://crisisrelief.un.org/opt-crisis" target="_blank">Donate Now</a>
+        </div>
+        <!-- Spacer for layout -->
+        <br>
+        <h1>How Can You Help</h1>
+        <br>
+        <!-- How you can help section -->
+        <div class="how-can-you-help">
+            <div class="help">
+                <h3>Make a Donation</h3>
+                <hr>
+                <br>
+                <img src="/Student3/images/Donate.jpg" alt="Donate">
+                <br>
+                <br>
+                <p>Your contribution can save lives by ensuring that those in urgent need have access to basic necessities and medical care.</p>
+            </div>
+            <div class="help">
+                <h3>Become a volunteer</h3>
+                <hr>
+                <br>
+                <img src="/Student3/images/vol.jpeg" alt="Volunteer">
+                <br>
+                <br>
+                <p>By enhancing educational opportunities, you can help break the cycle of poverty and give Palestinian children a brighter future.</p>
+            </div>
+            <div class="help">
+                <h3>Give Scholarship</h3>
+                <hr>
+                <br>
+                <img src="/Student3/images/schol.webp" alt="Scholarship">
+                <br>
+                <br>
+                <p>Your support will help restore a sense of normalcy and stability to communities, allowing families to rebuild their lives and thrive in a safer environment.</p>
+            </div>
+        </div>
+        <!-- Spacer for layout -->
+        <br>
+        <a id="up" href="#"><img src="/Student3/images/up.png" alt="go up"></a>
+        <br>
+        <br>
+        <!-- Footer section -->
+        <footer>
+            <br>
+            <p>Name: Inam Irshad</p>
+            <p id="page-edit">Page Editor</p>
+            <p>Role: <a href="/Student3/editor.html" target="_blank">Student 3</a></p>
+        </footer>
+    </body>
+</html>

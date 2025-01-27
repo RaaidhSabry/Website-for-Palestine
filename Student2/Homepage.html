@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang= "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/Student2/Student2.css">
+        <Title> Home Page </Title>
+     
+    </head>   
+<body>
+    <header>
+  
+<nav id="navContainer">
+   <a href="/Student2/Homepage.html"> <img id="logo" src="/Student2/images/logo.png" alt="Project Rebuild Logo"></a>
+    
+    <ul>
+        <li id="selected"><a href="/Student2/Homepage.html">Home</a></li>
+        <li><a href="/Student1/shop.html">Shop</a></li>
+        <li><a href="/Student4/Gallery.html">Gallery</a></li>
+        <li><a href="/Student4/Sitemap.html">Sitemap</a></li>
+        <li><a href="/Student2/Feedback.html">Feedback</a></li>
+        <li><a href="/Student2/Homepage.html#cont">Content</a></li>
+        <li><a href="/Student3/team.html">Team</a></li>
+        <li><img id="user" src="/Student2/images/user.png" alt="user logo">  </li>
+    </ul>
+    <div id="submenu" class="sub-menue">
+    <a href="/Student3/profile.html" class="sub-menue-link" onclick="setFunctionAndRedirect('login')">
+        <img src="/Student2/images/login.png" alt="logic logo">
+        <p>Login</p>
+        <span></span>
+    </a>
+    <a href="/Student3/profile.html" class="sub-menue-link" onclick="setFunctionAndRedirect('register')">
+        <img src="/Student2/images/sign-up.png" alt="signup logo">
+        <p>Sign-up</p>
+        <span></span>
+    </a>
+    </div>
+    </nav>
+    </header>
+    <br><br><br><br><br><br>
+    <main>
+    <div class="column side">
+    <div class="gallery">
+    <a href="/Student2/images/pic4.jpeg">
+    <img src="/Student2/images/pic4.jpeg" width="50" height="30" alt="Palestinian Kids">
+    </a>
+    </div>
+    <div class="gallery">
+    <a href="/Student2/images/pic6.jpg">
+    <img src="/Student2/images/pic6.jpg" width="50" height="30" alt="Destruction">
+    </a>
+    </div>
+    </div>   
+    <div class="column middle">
+    <br><br> <br>
+    <h1 class="titlee"> Project Rebuild: Bringing Aid to Palestine 🍉</h1> <br>
+    <p>Welcome to Project Rebuild, where we are dedicated to transforming the lives of the people of Palestine through meaningful aid and community support.</p>
+         <p>Our mission is to provide essential assistance and foster sustainable development, aligning with the<a class="links" href="https://sdgs.un.org/goals/goal16" target="_blank">
+            United Nations Sustainable Development Goal 16 (Peace, Justice, and Strong Institutions).</a></p>
+    <br>
+    <br> <br> <br>
+    </div>
+    <div class="column side">
+        <div class="gallery">
+        <a href="/Student1/shop.html"><img src="/Student2/images/Screenshot-2023-11-21-at-12.16.38.png" alt="Fundraising poster">
+        </div>>
+        <h3 class="titlee">Shop for a Cause, Every Purchase Supports Fundraising</h3>
+        <br>
+    </div>
+    <img src="/Student2/images/20240714_195001.jpg" width="1300" height="150" alt="Ceasefire" id="cont">
+    <br><br><br><br><h2 class="titlee">Engage and choose to make an impact by enlightening yourself
+    </h2> <br> <br>
+    
+    <div class="column one">
+        <div class="gallery2">
+            <a href="/Student4/ContentPage.html" class="contents">
+                <img src="/Student2/images/palestinian-pov.jpg" alt="Stories of the people">
+                <span class="text">Stories of the People</span>
+            </a>
+        </div>
+    </div>
+    <div class="column one">
+        <div class="gallery2">
+            <a href="/Student1/content.html" class="contents">
+                <img src="/Student2/images/current.jpg" alt="Present situation">
+                <span class="text">The Crisis of Palestine</span>
+            </a>
+        </div>
+    </div>
+    <div class="column one">
+        <div class="gallery2">
+            <a href="/Student2/content.html" class="contents">
+                <img src="/Student2/images/Palestinian-Struggle-for-Freedom.jpg" alt="History of Palestine">
+                <span class="text">History of Palestine</span>
+            </a>
+        </div>
+    </div>
+    <div class="column one">
+        <div class="gallery2">
+            <a href="/Student3/content.html" class="contents">
+                <img src="/Student2/images/donate-to-palestine-gaza-help-save-lives-falsatana-gaja-ka-thana-kara-javana-bcana-ma-mathatha-kara.png" alt="Donate">
+                <span class="text">Donate</span>
+            </a>
+        </div>
+    </div>
+    <br>
+    <div class="column side">
+        <br>
+        </div>
+    <div class="column middle">
+        <br> <br><br>   <br><br>   <br><br>   <br><br>
+        <img src="/Student2/images/200w-unscreen.gif" alt="Palestine flag gif">
+    <h2 class="titlee"> Our Commitment </h2>
+    <p>At Project Rebuild, our commitment is to turn conflict into legacy by providing critical aid, supporting sustainable development, and fostering strong, just communities. Together, we can build a future where peace and prosperity are within reach for all Palestinians.</p>
+    <p>    Thank you for your support. Together, we can make a lasting difference.</p>
+    <br><br>   <br><br>   <br><br>   <br><br>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <button class="go-top" onclick="scrollToTop()">Top</button>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        //Nav bar js
+document.addEventListener('DOMContentLoaded', (event) => {
+    const userImage = document.getElementById('user');
+    const submenu = document.getElementById('submenu');
+
+    userImage.addEventListener('click', () => {
+        submenu.classList.toggle('show');
+    });
+
+    
+    document.addEventListener('click', (e) => {
+        if (!userImage.contains(e.target) && !submenu.contains(e.target)) {
+            submenu.classList.remove('show');
+        }
+    });
+});
+
+function setFunctionAndRedirect(functionName) {
+    localStorage.setItem('functionToCall', functionName);
+}
+
+    </script>
+    </main>
+    
+    <footer>
+        <p>Name: Mohamed Aathif</p>
+        <p id="page-edit"><a href="/Student2/pageEditor.html" target="_blank" >Page Editor</a></p>
+        <p>Role: Student 2</p>
+    </footer>
+    </body>
+</html>
+    
+    

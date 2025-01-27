@@ -1,0 +1,74 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
+    background-image:url(/Student4/images/bg2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+/* svg tag  */
+
+svg {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+}
+
+a {
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+}
+  
+rect{   
+    fill:white;
+}
+
+
+text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    fill: black;
+}
+
+/* hover buttons  */
+
+a:hover rect{
+    fill: black; 
+}
+
+a:hover text {
+    fill: white;
+}
+  
+
+  
+line {
+    stroke: black; 
+    stroke-width: 3px; 
+}
+  
+line:hover {
+    stroke-width: 4px;
+} 
+ 
+footer {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: auto;
+}
+
+

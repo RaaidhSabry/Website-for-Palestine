@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="/Student4/Gallery.css">
+    <link rel="stylesheet" href="/Student4/nav.css">
+    <link rel="stylesheet" href="/Student4/footer.css">
+
+    <script src="/Student4/nav.js">  </script>
+
+</head>
+<body>
+
+    <!-- nav bar  -->
+
+    <nav id="navContainer">
+        <a href="/Student2/Homepage.html"><img id="logo" src="/Student4/images/logo.png" alt="Website Logo"></a>
+        <ul>
+            <li><a href="/Student2/Homepage.html">Home</a></li>
+            <li><a href="/Student1/Shop.html">Shop</a></li>
+            <li><a href="/Student4/Gallery.html" id="selected">Gallery</a></li>
+            <li><a href="/Student4/Sitemap.html">Sitemap</a></li>
+            <li><a href="/Student2/Feedback.html">Feedback</a></li>
+            <li><a href="/Student2/Homepage.html#cont">Content</a></li>
+            <li><a href="/Student3/team.html">Team</a></li>
+            <li><img id="user" src="/Student4/images/user.png" alt="User"></li>  
+        </ul>
+
+        <div id="submenu" class="sub-menue">
+        <a href="/Student3/profile.html" class="sub-menue-link" onclick="setFunctionAndRedirect('login')">
+            <img src="/Student4/images/login.png" alt="Login">
+            <p>Login</p>
+            <span>></span>
+        </a>
+
+        <a href="/Student3/profile.html" class="sub-menue-link" onclick="setFunctionAndRedirect('register')">
+            <img src="/Student4/images/sign-up.png" alt="Sign-up">
+            <p>Sign-up</p>
+            <span>></span>
+        </a>
+
+        </div>
+    </nav>
+
+    <!-- nav bar ends  -->
+
+    <script src="/Student4/GalleryButtons.js">    </script>
+
+    <!-- Background style buttons  -->
+
+    <div id="colorButtons">
+        <br>
+    <input type="button" onclick="changeColor('rgba(211, 29, 32, 0.61)')" value=" " id="redButton" />
+    <br>
+    <br>
+    <input type="button" onclick="changeColor('rgba(16, 186, 16, 0.536)')" value=" " id="greenButton" /> 
+    <br>
+    <br>
+    <input type="button" onclick="changeColor('rgba(12, 12, 175, 0.674)')" value=" " id="blueButton" />
+    <br>
+    <br>
+    <input type="color" onchange="changeColorPickerBG(this.value)"  id="colorPicker1">
+    <br>
+    <div class="vertical-text">BACKGROUND</div>
+    <br>
+    </div>
+
+    <!-- font style buttons  -->
+
+    <div id="textButtons">
+    <input type="button" onclick="changeTextColor('white')" value=" " id="whiteButton" />
+    <br>
+    <br>
+    <input type="button" onclick="changeTextColor('black')" value=" " id="blackButton"/>
+    <br>
+    <br>
+    <input type="button" onclick="changeTextColor('yellow')" value=" " id="yellowButton"/>
+    <br>
+    <br>
+    <input type="color" onchange="changeColorPickerText(this.value)"  id="colorPicker2">
+    <br>
+    <br>
+    <input type="button" onclick="increaseTextSize()" value="&#43;" id="increaseText"/>
+    <br>
+    <input type="button" onclick="decreaseTextSize()" value="&#8722;" id="decreaseText"/>
+    <br>
+    <div class="vertical-text">TEXT</div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- font style buttons outside the tab  -->
+
+    <input type="button" onclick="changeFontStyle('Segoe UI')" value="Aa" id="font1"/>
+    <br>
+    <input type="button" onclick="changeFontStyle('Courier New')" value="Aa" id="font2"/>
+    <br>
+    <input type="button" onclick="changeFontStyle('Arial')" value="Aa" id="font3"/>
+    <br>
+    <br>
+        
+    <!-- Main container to contain images  -->
+
+    <div id="imgContainer">
+
+        <h1>Gallery</h1>
+        
+        <div class="imgContainer">
+        <div class="imgZoom">
+            <img src="/Student4/images/pic1.jpeg" alt="Small Boy" onclick="openFullscreen(this)" onmouseover="enlargeImg(this)" onmouseout="resetImgSize(this)">
+            <div class="imgDescription"> A Palestinian boy, shattered by childhood violence, is carried through ravaged Gaza streets, highlighting the daily reality of war zone survival and uncertain future.</div>
+        </div>
+        <div class="imgZoom">
+            <img src="/Student4/images/pic2.jpg" alt="Destruction" onclick="openFullscreen(this)" onmouseover="enlargeImg(this)" onmouseout="resetImgSize(this)">
+            <div class="imgDescription">Aerial view depicts Palestinian neighborhood's catastrophic destruction, symbolizing profound loss and despair. Smoke rises, leaving families homeless and struggling to rebuild. </div>
+        </div>
+        <div class="imgZoom">
+            <img src="/Student4/images/pic3.jpg" alt="Families struggling" onclick="openFullscreen(this)" onmouseover="enlargeImg(this)" onmouseout="resetImgSize(this)">
+            <div class="imgDescription">Palestinian families, weighed down by their possessions, face the heartbreaking reality of displacement, showcasing the enduring human spirit amidst adversity.</div>
+        </div>
+        <div class="imgZoom">
+            <img src="/Student4/images/pic4.jpeg" alt="small boys finding food" onclick="openFullscreen(this)" onmouseover="enlargeImg(this)" onmouseout="resetImgSize(this)">
+            <div class="imgDescription">The image depicts two Palestinian boys holding an empty bowl, symbolizing hunger and deprivation, with their expressions expressing innocence and sadness.</div>
+        </div>
+        <div class="imgZoom">
+            <img src="/Student4/images/pic5.jpg" alt="a community struggling to get food" onclick="openFullscreen(this)" onmouseover="enlargeImg(this)" onmouseout="resetImgSize(this)">
+            <div class="imgDescription">The scene depicts a desperate crowd of Palestinians, including children, expressing their desperate need for food aid, highlighting the severe humanitarian crisis and their relentless fight for survival.</div>
+        </div>
+        <div class="imgZoom">
+            <img src="/Student4/images/pic6.jpg" alt="A sorrowful pic after the attacks" onclick="openFullscreen(this)" onmouseover="enlargeImg(this)" onmouseout="resetImgSize(this)">
+            <div class="imgDescription">A Palestinian man, balancing resilience and sorrow, protects a child in a devastated street, illustrating the struggle to maintain hope amid relentless bombardment.</div>
+        </div>
+        <div class="imgZoom">
+            <img src="/Student4/images/pic7.jpg" alt="Destruction 2" onclick="openFullscreen(this)" onmouseover="enlargeImg(this)" onmouseout="resetImgSize(this)">
+            <div class="imgDescription">The aerial view depicts the severe destruction in a Palestinian neighborhood, highlighting the devastating impact of conflict, leaving families homeless and communities in ruins.</div>
+        </div>
+        <div class="imgZoom">
+            <img src="/Student4/images/pic8.jpg" alt="Protest in UK" onclick="openFullscreen(this)" onmouseover="enlargeImg(this)" onmouseout="resetImgSize(this)">
+            <div class="imgDescription">The image depicts a massive protest for Palestinian rights, showcasing the solidarity and resistance among Palestinians and their supporters worldwide.</div>
+        </div>
+        </div>
+    </div>
+
+    <!-- fullscreen mode containing buttons to control the sliders and to close the mode -->
+
+    <div class="fullscreen">
+        <div class="fullscreenDetail">
+            <span class="closeButton" onclick="closeFullscreen()">&times;</span>
+            <img class="fullscreenImg">
+            <div class="navButtons">
+                <button class="previousButton">&#10094;</button>
+                <button class="nextButton" >&#10095;</button>
+            </div>
+            <div class="fullscreenDescription"></div>
+        </div>
+    </div>
+
+    <br>
+
+    <!-- footer  -->
+
+    <footer>
+        <br>
+        <p>Name: M.Raaidh Sabry</p>
+        <p id="page-edit">Page Editor</p>
+        <p>Role: <a href="/Student4/PageEditor.html" target="_blank"> Student 4</a></p>
+        <br>
+    </footer>
+
+    <script src="/Student4/GalleryImg.js">    </script>
+
+</body>
+</html>

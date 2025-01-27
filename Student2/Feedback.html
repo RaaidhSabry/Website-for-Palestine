@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Student2/Student2.css">
+    <title>Feedback</title>
+</head>
+<body>
+    <header>
+        <nav id="navContainer">
+            <a href="/Student2/Homepage.html"> <img id="logo" src="/Student2/images/logo.png" alt="Project Rebuild Logo"></a>
+            <ul>
+                <li><a href="/Student2/Homepage.html">Home</a></li>
+                <li><a href="/Student1/shop.html">Shop</a></li>
+                <li><a href="/Student4/Gallery.html">Gallery</a></li>
+                <li><a href="/Student4/Sitemap.html">Sitemap</a></li>
+                <li id="selected"><a href="/Student2/Feedback.html">Feedback</a></li>
+                <li><a href="/Student2/Homepage.html#cont">Content</a></li>
+                <li><a href="/Student3/team.html">Team</a></li>
+                <li><img id="user" src="/Student2/images/user.png" alt="user logo">  </li>
+            </ul>
+            <div id="submenu" class="sub-menue">
+                <a href="/Student3/profile.html" class="sub-menue-link" onclick="setFunctionAndRedirect('login')">
+                    <img src="/Student2/images/login.png" alt="login">
+                    <p>Login</p>
+                    <span></span>
+                </a>
+                <a href="/Student3/profile.html" class="sub-menue-link" onclick="setFunctionAndRedirect('register')">
+                    <img src="/Student2/images/sign-up.png" alt="sign up">
+                    <p>Sign-up</p>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <br><br><br><br><br><br><br>
+        <div class="contentbla"> 
+            <div class="container"> 
+                <h1 class="form-title">Let us know how you feel!</h1> 
+                <form id="userForm" action="#"> 
+                    <div class="main-user-info">
+                        <div class="user-input-box">
+                            <label for="FName">First Name</label>
+                            <input type="text" id="FName" name="FName" placeholder="Enter First Name" />
+                            <span class="error" id="FNameError"></span>
+                        </div>
+                        <div class="user-input-box">
+                            <label for="Surname">Surname</label>
+                            <input type="text" id="Surname" name="Surname" placeholder="Enter Surname"/>
+                            <span class="error" id="SurnameError"></span>
+                        </div>
+                        <div class="user-input-box"> 
+                            <label for="email">Email</label> 
+                            <input type="email" id="email" name="email" placeholder="Enter Email" /> 
+                        </div> 
+                        <div class="user-input-box"> 
+                            <label for="phoneNumber">Phone Number</label> 
+                            <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Enter Phone Number" /> 
+                        </div> 
+                        <div class="user-input-box" id="feedback">
+                            <label>Feedback</label>
+                            <textarea id="feedbackArea" name="feedback" rows="4" placeholder="Your comments"></textarea>
+                            <span class="error" id="feedbackError"></span>
+                        </div>
+                    </div>   
+                    <div class="feedback-details-box"> 
+                        <span class="feedback-title">How satisfied are you with our services?</span><br>
+                        <br><p>(rate from 1 being the lowest to 5 being the highest)</p> 
+                        <div class="center"> 
+                            <div class="stars"> 
+                                <input type="radio" id="five" name="rate" value="5"> 
+                                <label for="five"></label> 
+                                <input type="radio" id="four" name="rate" value="4"> 
+                                <label for="four"></label> 
+                                <input type="radio" id="three" name="rate" value="3"> 
+                                <label for="three"></label> 
+                                <input type="radio" id="two" name="rate" value="2"> 
+                                <label for="two"></label> 
+                                <input type="radio" id="one" name="rate" value="1"> 
+                                <label for="one"></label> 
+                            </div> 
+                            <div class="form-submit-btn"> 
+                                <br><br><br> <br><br><br> 
+                                <input type="submit" value="Next"> 
+                            </div> 
+                        </div> 
+                        
+                    </div> 
+
+                </form> 
+                <div id="feedbackPreview" style="display: none;">
+                    <h2>Review Your Feedback</h2>
+                    <p id="previewMessage"></p>
+                    <div class="form-submit-btn" id="editButton"> 
+                        <input type="submit" value="Edit"> 
+                    <div class="form-submit-btn" id="confirmButton"> 
+                        <input type="submit" value="Submit"> 
+                </div>
+            </div> 
+        </div> 
+        </div>
+        </div>
+        </main>
+    <script src="/Student2/Student2.js"></script>
+    <footer>
+        <p>Name: Mohamed Aathif</p>
+        <p id="page-edit"><a href="/Student2/pageEditor.html" target="_blank" >Page Editor</a></p>
+        <p>Role: Student 2</p>
+    </footer>
+</body>
+</html>

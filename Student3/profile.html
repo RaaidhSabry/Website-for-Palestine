@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Specifies the character encoding for the HTML document -->
+        <meta charset="UTF-8">
+        <!-- Sets the viewport to ensure the page is responsive on all devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Links to external CSS files for styling the page -->
+        <link rel="stylesheet" href="/Student3/profile-style.css">
+        <link rel="stylesheet" href="/Student3/footer.css">
+        
+        <!-- Links to external JavaScript files for adding functionality to the page -->
+        <script src="/Student3/scripts/nav.js"></script>
+        <script src="/Student3/scripts/script.js"></script>
+        <script src="/Student3/scripts/validation.js"></script>
+        <script src="/Student3/scripts/profile.js"></script>
+        <!-- Title of the HTML document -->
+        <title>Profile</title>
+    </head>
+    <body>
+        <!-- Main content container -->
+        <div class="content">
+            <!-- Navigation bar container -->
+            <nav id="navContainer">
+                <!-- Website logo -->
+                <a href="/Student2/Homepage.html"><img id="logo" src="/Student3/images/logo.png" alt="Website logo"></a>
+                <!-- Navigation links -->
+                <ul>
+                    <li><a href="/Student2/Homepage.html">Home</a></li>
+                    <li><a href="/Student1/shop.html">Shop</a></li>
+                    <li><a href="/Student4/Gallery.html">Gallery</a></li>
+                    <li><a href="/Student4/Sitemap.html">Sitemap</a></li>
+                    <li><a href="/Student2/feedback.html">Feedback</a></li>
+                    <li><a href="/Student2/Homepage.html#cont">Content</a></li>
+                    <li><a href="/Student3/team.html">Team</a></li>
+                    <li><img id="user" src="/Student3/images/user.png" alt="User image"></li>
+                </ul>
+                <!-- Submenu for profile actions -->
+                <div id="submenu" class="sub-menue">
+                    <a href="/Student3/profile.html" class="sub-menue-link" onclick="login()">
+                        <img src="/Student3/images/login.png" alt="Login">
+                        <p>Login</p>
+                        <span>></span>
+                    </a>
+                    <a href="/Student3/profile.html" class="sub-menue-link" onclick="register()">
+                        <img src="/Student3/images/sign-up.png" alt="Sign-up">
+                        <p>Sign-up</p>
+                        <span>></span>
+                    </a>
+                </div>
+            </nav>
+            <!-- Spacer for layout -->
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <!-- Progress bar for loading state -->
+            <div class="progress" id="loader">
+                <div class="progress-value" id="progress-value"></div>
+            </div>
+            <!-- Spacer for layout -->
+            <br>
+            <!-- Login and signup form wrapper -->
+            <div class="wrapper" id="Wrapper">
+                <!-- Abstract image section -->
+                <div class="abstract">
+                    <img src="/Student3/images/Town.jpeg" alt="Free Palestine">
+                </div>
+                <!-- Login form container -->
+                <div class="login-container">
+                    <h1>Login</h1>
+                    <br>
+                    <hr>
+                    <br>
+                    <!-- Username input field -->
+                    <div class="input-group">
+                        <input class="input" type="text" id="Username" onfocus="toggleLabel(this)" onblur="checkInput(this)">
+                        <label class="label" for="Username">Username</label>
+                    </div>
+                    <br>
+                    <!-- Password input field -->
+                    <div class="input-group">
+                        <input class="input" type="password" id="password" onfocus="toggleLabel(this)" onblur="checkInput(this)">
+                        <label class="label" for="password">Password </label>
+                    </div>
+                    <br>
+                    <!-- Show password and forgot password options -->
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" id="show1" class="check" onclick="togglePassword1()">
+                        <label for="show1">Show password |</label>
+                        <a id="forgot" onclick="forgot()"> Forgot password?</a>
+                    </div>
+                    <br>
+                    <!-- Login button -->
+                    <button class="button" type="button" onclick="validateCredentials()"><b>Login</b></button>
+                    <br>
+                    <br>
+                    <!-- Link to switch to registration -->
+                    <p>Don't have an account? <a onclick="register()"> Register</a></p>
+                </div>
+            </div>
+            <!-- Signup form container -->
+            <div class="signup-container" id="Signup-Container">
+                <!-- Signup step 1: Personal Details -->
+                <div class="signup-step1" id="Signup-step1">
+                    <h1>Sign-up</h1>
+                    <br>
+                    <p>Step 1 - Personal Details</p>
+                    <br>
+                    <hr>
+                    <br>
+                    <!-- Name input fields -->
+                    <div class="name-input">
+                        <div class="input-group">
+                            <input class="input" type="text" id="FirstName" onfocus="toggleLabel(this)" onblur="checkInput(this)">
+                            <label class="label" for="FirstName"><b>First name</b></label>
+                        </div>
+                        <div class="input-group">
+                            <input class="input" type="text" id="LastName" onfocus="toggleLabel(this)" onblur="checkInput(this)">
+                            <label class="label" for="LastName"><b>Last name</b></label>
+                        </div>
+                    </div>
+                    <br>
+                    <!-- Birthday input field -->
+                    <div class="input-group">
+                        <label for="birthday"><b>Birthday</b></label>
+                        <input class="input" type="date" id="birthday" name="birthday">
+                    </div>
+                    <br>
+                    <!-- Gender selection -->
+                    <div class="input-group-radio">
+                        <label><b>Gender</b></label><br><br><br>
+                        <input class="radio" type="radio" id="male" name="gender" value="male">
+                        <label for="male"><b>Male</b></label>
+                        <input class="radio" type="radio" id="female" name="gender" value="female">
+                        <label for="female"><b>Female</b></label>
+                        <input class="radio" type="radio" id="rather" name="gender" value="rather not say">
+                        <label for="rather"><b>Rather not say</b></label>
+                    </div>
+                    <!-- Additional personal details -->
+                    <div class="input-group">
+                        <input class="input" type="text" id="occupation" onfocus="toggleLabel(this)" onblur="checkInput(this)">
+                        <label class="label" for="occupation"><b>Occupation</b></label>
+                    </div>
+                    <br>
+                    <div class="input-group">
+                        <input class="input" type="text" id="country" onfocus="toggleLabel(this)" onblur="checkInput(this)">
+                        <label class="label" for="country"><b>Country</b></label>
+                    </div>
+                    <br>
+                    <div class="input-group">
+                        <input class="input" type="text" id="city" onfocus="toggleLabel(this)" onblur="checkInput(this)">
+                        <label class="label" for="city"><b>City</b></label>
+                    </div>
+                    <br>
+                    <!-- Next button for step 1 -->
+                    <button class="button" type="button" onclick="toggleStep1()"><b>Next</b></button>
+                    <br>
+                    <br>
+                    <!-- Link to switch to login -->
+                    <p>Already registered? <a onclick="login()"> Login</a></p>
+                </div>
+                <!-- Signup step 2: Contact Info -->
+                <div class="signup-step2" id="Signup-step2">
+                    <h1>Sign-up</h1>
+                    <br>
+                    <p>Step 2 - Contact Info</p>
+                    <br>
+                    <hr>
+                    <br>
+                    <!-- Email and phone input fields -->
+                    <div class="input-group">
+                        <input class="input" type="email" id="email" onfocus="toggleLabel(this)" onblur="checkInput(this)">
+                        <label class="label" for="email"><b>Email</b></label>
+                    </div>
+                    <br>
+                    <div class="input-group">
+                        <input class="input" type="tel" id="phone" onfocus="toggleLabel(this)" onblur="checkInput(this)">
+                        <label class="label" for="phone"><b>Phone number </b></label>
+                    </div>
+                    <br>
+                    <!-- Navigation buttons for step 2 -->
+                    <button class="button" type="button" onclick="register()"><b>Back</b></button>
+                    <button class="button" type="button" onclick="toggleStep2()"><b>Next</b></button>
+                    <br>
+                    <br>
+                    <!-- Link to switch to login -->
+                    <p>Already registered? <a onclick="login()"> Login</a></p>
+                </div>
+                <!-- Signup step 3: User Credentials -->
+                <div class="signup-step3" id="Signup-step3">
+                    <h1>Sign-up</h1>
+                    <br>
+                    <p>Step 3 - User Credentials</p>
+                    <br>
+                    <hr>
+                    <br>
+                    <!-- Username and password input fields -->
+                    <div class="input-group">
+                        <input class="input" type="text" id="sUsername" onfocus="toggleLabel(this)" onblur="checkInput(this)">
+                        <label class="label" for="sUsername"><b>Username</b></label>
+                    </div>
+                    <br>
+                    <div class="input-group">
+                        <input class="input" type="password" id="spassword" onfocus="toggleLabel(this)" onblur="checkInput(this)">
+                        <label class="label" for="spassword"><b>Password </b></label>
+                    </div>
+                    <br>
+                    <div class="input-group">
+                        <input class="input" type="password" id="re-password" onfocus="toggleLabel(this)" onblur="checkInput(this)">
+                        <label class="label" for="re-password"><b>Confirm password </b></label>
+                    </div>
+                    <br>
+                    <!-- Show password option -->
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" id="show2" class="check" onclick="togglePassword2()">
+                        <label for="show2">Show password</label>
+                    </div>
+                    <br>
+                    <!-- Navigation buttons for step 3 -->
+                    <button class="button" type="button" onclick="toggleStep1()"><b>Back</b></button>
+                    <button class="button" type="button" onclick="validate()"><b>Sign-Up</b></button>
+                    <br>
+                    <br>
+                    <!-- Link to switch to login -->
+                    <p>Already registered? <a onclick="login()"> Login</a></p>
+                </div>
+                <!-- Container for displaying summary -->
+                <div class="displaySummary" id="displaySummary"></div>
+            </div>
+        </div>
+        <!-- Spacer for layout -->
+        <br>
+        <br>
+        <br>
+        <!-- Footer section -->
+        <footer>
+            <br>
+            <p>Name: Inam Irshad</p>
+            <p id="page-edit">Page Editor</p>
+            <p>Role:<a href="/Student3/editor.html" target="_blank"> Student 3</a></p>
+        </footer>
+    </body>
+</html>
